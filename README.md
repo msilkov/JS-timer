@@ -1,15 +1,14 @@
-# Проект: amoCRM-Timer
+# Проект: JavaScript-Timer
 
 ### Обзор
 
 **Проект**
 
-* [Ссылка на проект](https://msilkov.github.io/amoCRM-test-timer/)
-
+* [Ссылка на демо](https://msilkov.github.io/JS-timer/)
 
 ## Описание проекта:
- Тестовое задание amoCRM на позицию "Junior/Junior+ Frontend Developer"
- Разработка таймера.
+ Разработка  и стилизация таймера.
+
 ## В проекте использованы подходы и технологии:
 1. HTML
 2. CSS
