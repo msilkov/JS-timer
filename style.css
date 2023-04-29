@@ -1,37 +1,93 @@
+body {
+  background-color: #f7f7f7;
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+
 .section-timer {
+  width: 500px;
+  margin: 50px auto;
+  background-color: #e0e5ec;
+  box-shadow: 10px 10px 20px #c7ccd4, -10px -10px 20px #f4f8ff;
+  border-radius: 30px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 768px;
-  margin: 100px auto;
-  padding: 50px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  border-radius: 10px;
 }
 
 .timer {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 50%;
-  width: 100%;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 0 0 30px;
-  font-size: 22px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #3c3c3c;
+  margin-bottom: 30px;
+}
+
+.timer__hours,
+.timer__minutes,
+.timer__seconds {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e0e5ec;
+  box-shadow: 6px 6px 12px #c7ccd4, -6px -6px 12px #f4f8ff;
+  margin: 0 10px;
+  line-height: 80px;
+  font-size: 2rem;
+  color: #3c3c3c;
 }
 
 .timer-form {
-  max-width: 50%;
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #000;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-form__label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.timer-form__input {
+  width: 50px;
+  margin-left: 10px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .buttons {
-  margin: 15px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 10px;
+  background-color: #e0e5ec;
+  box-shadow: 6px 6px 12px #c7ccd4, -6px -6px 12px #f4f8ff;
+  color: #3c3c3c;
+}
+
+button:hover {
+  background-color: #d5dae1;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: inset 6px 6px 12px #c7ccd4, inset -6px -6px 12px #f4f8ff;
+  background-color: #d5dae1;
+  transform: translate(2px, 2px);
+}
+
+button:focus {
+  outline: none;
 }
