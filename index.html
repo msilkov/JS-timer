@@ -9,57 +9,34 @@
 	</head>
 	<body>
 		<section class="section-timer">
-			<div class="timer">
-				<span class="timer__hours">00</span>:
-				<span class="timer__minutes">00</span>:
-				<span class="timer__seconds">00</span>
-			</div>
-
-			<form class="timer-form">
-				<label class="timer-form__label"
-					>Hours:
-					<input
-						class="timer-form__input"
-						type="number"
-						id="hours"
-						name="hours"
-						min="0"
-						max="23"
-						value="0"
-					/>
-				</label>
-
-				<label class="timer-form__label"
-					>Minutes:
-					<input
-						class="timer-form__input"
-						type="number"
-						id="minutes"
-						name="minutes"
-						min="0"
-						max="59"
-						value="0"
-					/>
-				</label>
-
-				<label class="timer-form__label"
-					>Seconds:
-					<input
-						class="timer-form__input"
-						type="number"
-						id="seconds"
-						name="seconds"
-						min="0"
-						max="59"
-						value="0"
-					/>
-				</label>
-				<div class="buttons">
-					<button type="button" id="start">Start</button>
-					<button type="button" id="reset">Reset</button>
+			<div class="timer-box">
+				<div class="timer">
+					<span class="timer__hours">00</span>:
+					<span class="timer__minutes">00</span>:
+					<span class="timer__seconds">00</span>
 				</div>
-			</form>
+		
+				<form class="timer-form">
+					<label class="timer-form__label">Hours:
+						<input class="timer-form__input" type="number" id="hours" name="hours" min="0" max="23" value="0"/>
+					</label>
+		
+					<label class="timer-form__label">Minutes:
+						<input class="timer-form__input" type="number" id="minutes" name="minutes" min="0" max="59" value="0"/>
+					</label>
+		
+					<label class="timer-form__label">Seconds:
+						<input class="timer-form__input" type="number" id="seconds" name="seconds" min="0" max="59" value="0"/>
+					</label>
+		
+					<div class="buttons">
+						<button type="button" id="start">Start</button>
+						<button type="button" id="reset">Reset</button>
+					</div>
+				</form>
+			</div>
 		</section>
+		
 		<script src="./main.js"></script>
 	</body>
 </html>
